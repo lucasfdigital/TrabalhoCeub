@@ -1,48 +1,104 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-body {
-    font-family: "Sevillana", cursive;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Reset básico */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    background-color: #e6933328;;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+/* Estilização do Header */
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header h1 {
+    font-size: 20px;
+    flex-grow: 1;
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-input {
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container do formulário */
+.container {
+    width: 50%;
+    margin: 30px auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container h1 {
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.container form input {
+    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button[type="submit"] {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
+.container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+.container button:hover {
+    background-color: #00796b;
+}
+
+/* Seção de Localização */
+.localizacao {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.localizacao h1 {
+    color: #004d40;
+    margin-bottom: 15px;
+}
+
+.localizacao iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    margin-top: 30px;
 }
